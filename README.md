@@ -45,6 +45,12 @@ To make it easier on everybody, it's best if we use a PR to diff what work was c
 5. Send the link to the PR
 
 ## Testing Methodology
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+⋅⋅1. Ordered sub-list
+4. And another item.
 1.	View the software to be tested.
 2.	Elicit requirements by exploring functionality of the paint calculator
 ⋅⋅a.	Field validation
