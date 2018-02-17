@@ -63,9 +63,9 @@ On the initial run, I see flawless field validation, but a failed test made for 
   5.	Flushing out additional bugs
 By observing the failed test under debug, I see that the total area to paint is being miscalculated. 
   6.	Report 1st bug.
-  - `JIRA PC-0001 Total Area to paint is miscalculated.
+  - `JIRA PC-0001 Total Area to paint is miscalculated.`
 
-    When I run the following test cases.
+    `When I run the following test cases.
 
     RoundingCalculation
 
@@ -79,7 +79,7 @@ By observing the failed test under debug, I see that the total area to paint is 
     -  When I submit 1 room to paint
     -  And I set the calculation to 20L, 20W, and 5H
 
-    Then I should have a total length to paint of 400 or ((20*2)+ (20*2))*5
+    Then I should have a total length to paint of 400 or ((20x2)+ (20x2))*5
 
     Currently I receive 2000 gallons.
 
