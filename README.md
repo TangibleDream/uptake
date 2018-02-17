@@ -45,19 +45,14 @@ To make it easier on everybody, it's best if we use a PR to diff what work was c
 5. Send the link to the PR
 
 ## Testing Methodology
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
 1.	View the software to be tested.
 2.	Elicit requirements by exploring functionality of the paint calculator
-⋅⋅a.	Field validation
-⋅⋅b.	Simple Calculation
-⋅⋅c.	Complex Calculation
-⋅⋅d.	RoundingCalculation
+  -  Field validation
+  -  Simple Calculation
+  -  Complex Calculation
+  -  RoundingCalculation
 3.	Automate tests
+
 Since I had the option of technology, I used C#/Selenium/SpecFlow/ReportUnit.  For each test I mapped out xpath selectors by page object modeling. For most commands I created extension methods for cleaner code.
 ⋅⋅a.	Field validation seems important for this test, and thankfully baked in with type=”number” and min=”1” properties of input.  Decimal, negative numbers, and empty fields  are tested to assure the script will not advance to the dimension page or the result page
 ⋅⋅b.	For simple and complex calculation, I assure that the total area to paint is calculated, and that the total gallons required is likewise calculated.
