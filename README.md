@@ -87,7 +87,8 @@ On the initial run, I see flawless field validation, but a failed test made for 
   7.	Receive repair, rerun test.
   8.	Flush out 2nd bug.
   
-The second running of the test now isolates a rounding error. 
+The second running of the test now isolates a rounding error.
+
   9.	Report 2nd bug.
 	
     JIRA PC-0002 Paint for each room does not round up
