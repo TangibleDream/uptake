@@ -59,9 +59,12 @@ Since I had the option of technology, I used C#/Selenium/SpecFlow/ReportUnit.  F
   -  For simple and complex calculation, I assure that the total area to paint is calculated, and that the total gallons required is likewise calculated.
   4.  View initial results
 
-On the initial run, I see flawless field validation, but a failed test made for area to paint in the simple, complex and rounding calculation.
+On the initial run, I see flawless field validation, but a failed test made for area to paint in the simple, 
+    complex and rounding calculation.
+    
   5.	Flushing out additional bugs
-By observing the failed test under debug, I see that the total area to paint is being miscalculated. 
+ 
+ By observing the failed test under debug, I see that the total area to paint is being miscalculated. 
   6.	Report 1st bug.
     
     JIRA PC-0001 Total Area to paint is miscalculated.
