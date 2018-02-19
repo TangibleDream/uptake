@@ -132,4 +132,9 @@ The second running of the test now isolates a rounding error.
 
 ## Running Tests
 
-Write instructions for how a user executes the automated tests you created.
+Ultimately, you should be able to place an nunit3 command in a jenkins or saucelabs type CI system.
+For now, I'll give you the instructions for a command line call with paint calculator running on localhost.
+
+1. install nunit-console version 3.8.0 or higher
+2. From solution directory type `nunit3-console UptakeTechTest\bin\Debug\UptakeTechTest.exe` and press enter
+3. After the test has completed, you can use ReportUnit to make a presentable report type `reportunit TestResult.xml` and press enter
