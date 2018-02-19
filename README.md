@@ -114,6 +114,7 @@ The second running of the test now isolates a rounding error.
   11.	Flush out 3rd bug.
   
   Looking at the 3rd build report, both the One Room Calculation and the new 350 special test round to the wrong number of gallons
+  
   12.	Report 3rd bug.
   
     JIRA PC-0003 Paint gallons for each room does not round correctly  
