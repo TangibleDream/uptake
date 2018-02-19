@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="10" result="Failed" total="10" passed="0" failed="10" inconclusive="0" skipped="0" asserts="0" engine-version="3.8.0.0" clr-version="4.0.30319.42000" start-time="2018-02-19 02:06:51Z" end-time="2018-02-19 02:08:07Z" duration="75.627174">
+  <command-line><![CDATA[nunit3-console  UptakeTechTest\bin\Debug\UptakeTechTest.exe]]></command-line>
+  <test-suite type="Assembly" id="0-1012" name="UptakeTechTest.exe" fullname="C:\Users\Grace\Documents\Visual Studio 2015\Projects\UptakeTechTest\UptakeTechTest\bin\Debug\UptakeTechTest.exe" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2018-02-19 02:06:52Z" end-time="2018-02-19 02:08:06Z" duration="74.573783" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.9.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.16299.0" platform="Win32NT" cwd="C:\Users\Grace\Documents\Visual Studio 2015\Projects\UptakeTechTest" machine-name="ROB" user="Grace" user-domain="ROB" culture="en-US" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Grace\Documents\Visual Studio 2015\Projects\UptakeTechTest" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="5600" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1013" name="UptakeTechTest" fullname="UptakeTechTest" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2018-02-19 02:06:52Z" end-time="2018-02-19 02:08:06Z" duration="74.558451" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1014" name="Features" fullname="UptakeTechTest.Features" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2018-02-19 02:06:52Z" end-time="2018-02-19 02:08:06Z" duration="74.557905" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1000" name="FieldValidationFeature" fullname="UptakeTechTest.Features.FieldValidationFeature" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2018-02-19 02:06:52Z" end-time="2018-02-19 02:07:37Z" duration="45.504986" total="6" passed="0" failed="6" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Description" value="FieldValidation" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[-> Using app.config
+]]></output>
+          <test-case id="0-1005" name="DimensionPageDecimalValue" fullname="UptakeTechTest.Features.FieldValidationFeature.DimensionPageDecimalValue" methodname="DimensionPageDecimalValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="1232170084" result="Failed" label="Error" start-time="2018-02-19 02:06:52Z" end-time="2018-02-19 02:07:01Z" duration="8.713895" asserts="0">
+            <properties>
+              <property name="Description" value="Dimension page decimal value" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceADecimalForWidth() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 51
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.DimensionPageDecimalValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 23]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place a decimal for width
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"results" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1006" name="DimensionPageEmptyValue" fullname="UptakeTechTest.Features.FieldValidationFeature.DimensionPageEmptyValue" methodname="DimensionPageEmptyValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="1205544798" result="Failed" label="Error" start-time="2018-02-19 02:07:01Z" end-time="2018-02-19 02:07:08Z" duration="7.483999" asserts="0">
+            <properties>
+              <property name="Description" value="Dimension page empty value" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenILeaveHeightBlank() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 61
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.DimensionPageEmptyValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 27]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I leave height blank
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"results" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1004" name="DimensionPageNegativeValue" fullname="UptakeTechTest.Features.FieldValidationFeature.DimensionPageNegativeValue" methodname="DimensionPageNegativeValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="82819992" result="Failed" label="Error" start-time="2018-02-19 02:07:08Z" end-time="2018-02-19 02:07:16Z" duration="7.369859" asserts="0">
+            <properties>
+              <property name="Description" value="Dimension page negative value" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceANegativeLength() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 41
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.DimensionPageNegativeValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 19]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place a negative length
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"results" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1002" name="IndexPageDecimalValue" fullname="UptakeTechTest.Features.FieldValidationFeature.IndexPageDecimalValue" methodname="IndexPageDecimalValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="1944019821" result="Failed" label="Error" start-time="2018-02-19 02:07:16Z" end-time="2018-02-19 02:07:23Z" duration="7.214667" asserts="0">
+            <properties>
+              <property name="Description" value="Index page decimal value" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.IndexPageDecimalValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 11]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "2.3" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"dimension" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1003" name="IndexPageEmptyValue" fullname="UptakeTechTest.Features.FieldValidationFeature.IndexPageEmptyValue" methodname="IndexPageEmptyValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="923461536" result="Failed" label="Error" start-time="2018-02-19 02:07:23Z" end-time="2018-02-19 02:07:30Z" duration="7.368851" asserts="0">
+            <properties>
+              <property name="Description" value="Index page empty value" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XEnter(IWebDriver driver, String xpath) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 36
+   at UptakeTechTest.steps.FieldValidationSteps.WhenILeaveNumberOfRoomsBlankAndSubmit() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 35
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.IndexPageEmptyValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 15]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I leave number of rooms blank and submit
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"dimension" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1001" name="IndexPageNegativeValue" fullname="UptakeTechTest.Features.FieldValidationFeature.IndexPageNegativeValue" methodname="IndexPageNegativeValue" classname="UptakeTechTest.Features.FieldValidationFeature" runstate="Runnable" seed="1712890502" result="Failed" label="Error" start-time="2018-02-19 02:07:30Z" end-time="2018-02-19 02:07:37Z" duration="7.131865" asserts="0">
+            <properties>
+              <property name="Description" value="Index page negative value" />
+              <property name="Category" value="uptake" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.FieldValidationFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.FieldValidationFeature.IndexPageNegativeValue() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\FieldValidation.feature:line 7]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "-5" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+Then a rejection will appear/"dimension" page will not load
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1007" name="PaintCalulatorFeature" fullname="UptakeTechTest.Features.PaintCalulatorFeature" classname="UptakeTechTest.Features.PaintCalulatorFeature" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2018-02-19 02:07:37Z" end-time="2018-02-19 02:08:06Z" duration="29.049308" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Description" value="PaintCalulator" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1008" name="OneRoomCalculation" fullname="UptakeTechTest.Features.PaintCalulatorFeature.OneRoomCalculation" methodname="OneRoomCalculation" classname="UptakeTechTest.Features.PaintCalulatorFeature" runstate="Runnable" seed="599474236" result="Failed" label="Error" start-time="2018-02-19 02:07:37Z" end-time="2018-02-19 02:07:45Z" duration="7.412175" asserts="0">
+            <properties>
+              <property name="Description" value="One room calculation" />
+              <property name="Category" value="uptake" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.PaintCalulatorFeature.OneRoomCalculation() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\PaintCalulator.feature:line 10]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "1" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+And I set the dimensions for room 1 as 20 length 20 width and 5 height
+-> skipped because of previous errors
+And I submit dimensions
+-> skipped because of previous errors
+Then the area to paint for room 1 is 400 feet
+-> skipped because of previous errors
+And I should see a result of 1 gallons
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1010" name="RoundingCalculation" fullname="UptakeTechTest.Features.PaintCalulatorFeature.RoundingCalculation" methodname="RoundingCalculation" classname="UptakeTechTest.Features.PaintCalulatorFeature" runstate="Runnable" seed="1696477096" result="Failed" label="Error" start-time="2018-02-19 02:07:45Z" end-time="2018-02-19 02:07:52Z" duration="7.090356" asserts="0">
+            <properties>
+              <property name="Description" value="Rounding calculation" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.PaintCalulatorFeature.RoundingCalculation() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\PaintCalulator.feature:line 28]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "1" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+And I set the dimensions for room 1 as 20 length 20 width and 6 height
+-> skipped because of previous errors
+And I submit dimensions
+-> skipped because of previous errors
+Then the area to paint for room 1 is 480 feet
+-> skipped because of previous errors
+And I should see a result of 2 gallons
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1011" name="ThreeFiftySpecial" fullname="UptakeTechTest.Features.PaintCalulatorFeature.ThreeFiftySpecial" methodname="ThreeFiftySpecial" classname="UptakeTechTest.Features.PaintCalulatorFeature" runstate="Runnable" seed="1483730332" result="Failed" label="Error" start-time="2018-02-19 02:07:52Z" end-time="2018-02-19 02:07:59Z" duration="7.160933" asserts="0">
+            <properties>
+              <property name="Description" value="Three Fifty Special" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ThreeFiftySpecial() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\PaintCalulator.feature:line 35]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "1" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+And I set the dimensions for room 1 as 15 length 15 width and 6 height
+-> skipped because of previous errors
+And I submit dimensions
+-> skipped because of previous errors
+Then the area to paint for room 1 is 360 feet
+-> skipped because of previous errors
+And I should see a result of 1 gallons
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+          <test-case id="0-1009" name="ThreeRoomCalculation" fullname="UptakeTechTest.Features.PaintCalulatorFeature.ThreeRoomCalculation" methodname="ThreeRoomCalculation" classname="UptakeTechTest.Features.PaintCalulatorFeature" runstate="Runnable" seed="1117114363" result="Failed" label="Error" start-time="2018-02-19 02:07:59Z" end-time="2018-02-19 02:08:06Z" duration="7.385249" asserts="0">
+            <properties>
+              <property name="Description" value="Three room calculation" />
+            </properties>
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at UptakeTechTest.extensionMethods.ExtensionMethods.XSet(IWebDriver driver, String xpath, String text) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\extensionMethods\ExtensionMethods.cs:line 54
+   at UptakeTechTest.steps.FieldValidationSteps.WhenIPlaceNumberOfRooms(String rooms) in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\steps\UptakeTestSteps.cs:line 28
+   at lambda_method(Closure , IContextManager , String )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ScenarioCleanup()
+   at UptakeTechTest.Features.PaintCalulatorFeature.ThreeRoomCalculation() in C:\Users\Grace\documents\visual studio 2015\Projects\UptakeTechTest\UptakeTechTest\features\PaintCalulator.feature:line 21]]></stack-trace>
+            </failure>
+            <output><![CDATA[When I place "3" number of rooms
+-> error: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@name="rooms"]"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64)
+And I set the dimensions for room 1 as 10 length 10 width and 5 height
+-> skipped because of previous errors
+And I set the dimensions for room 2 as 5 length 5 width and 5 height
+-> skipped because of previous errors
+And I set the dimensions for room 3 as 5 length 5 width and 5 height
+-> skipped because of previous errors
+And I submit dimensions
+-> skipped because of previous errors
+Then the area to paint for room 1 is 200 feet
+-> skipped because of previous errors
+Then the area to paint for room 2 is 100 feet
+-> skipped because of previous errors
+Then the area to paint for room 3 is 100 feet
+-> skipped because of previous errors
+And I should see a result of 3 gallons
+-> skipped because of previous errors
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
