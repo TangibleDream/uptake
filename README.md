@@ -82,7 +82,7 @@ On the initial run, I see flawless field validation, but a failed test made for 
 
         Currently I receive 2000 gallons.
 
-        Note: Issue tested on Chrome and IE`
+        Note: Issue tested on Chrome and IE
 
   7.	Receive repair, rerun test.
   8.	Flush out 2nd bug.
@@ -126,7 +126,7 @@ The second running of the test now isolates a rounding error.
         -  And I set the calculation to 15L, 15W, and 6H
         Then I should have a total length to paint of 360. This would calculate to .8 gallons of paint which should, 
         in turn, round up to 1 gallon.
-        Currently, it rounds to 2 gallons.`
+        Currently, it rounds to 2 gallons.
   13.	 Receive repair, rerun test.
   14.	 All tests now pass; this build can be sent to UAT.
 
