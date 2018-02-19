@@ -63,47 +63,43 @@ On the initial run, I see flawless field validation, but a failed test made for 
   5.	Flushing out additional bugs
 By observing the failed test under debug, I see that the total area to paint is being miscalculated. 
   6.	Report 1st bug.
-  - `JIRA PC-0001 Total Area to paint is miscalculated.`
+    
+    JIRA PC-0001 Total Area to paint is miscalculated.
+        When I run the following test cases.`
+        -   RoundingCalculation
+        -   OneRoomCalculation
+        -   ThreeRoomCalculation
+        The total area to paint is not calculated correctly
+        To reproduce
 
-    `When I run the following test cases.
+        -  When I submit 1 room to paint
+        -  And I set the calculation to 20L, 20W, and 5H
+        Then I should have a total length to paint of 400 or ((20x2)+ (20x2))*5
 
-    RoundingCalculation
+        Currently I receive 2000 gallons.
 
-    OneRoomCalculation
-
-    ThreeRoomCalculation
-
-    The total area to paint is not calculated correctly
-    To reproduce
-
-    -  When I submit 1 room to paint
-    -  And I set the calculation to 20L, 20W, and 5H
-
-    Then I should have a total length to paint of 400 or ((20x2)+ (20x2))*5
-
-    Currently I receive 2000 gallons.
-
-    Note: Issue tested on Chrome and IE`
+        Note: Issue tested on Chrome and IE`
 
   7.	Receive repair, rerun test.
   8.	Flush out 2nd bug.
   
 The second running of the test now isolates a rounding error. 
   9.	Report 2nd bug.
-  -  `JIRA PC-0002 Paint ` for each room does not round up
-    When I run the following test cases.
-    RoundingCalculation
-    ThreeRoomCalculation
+	
+    JIRA PC-0002 Paint for each room does not round up
+  	    When I run the following test cases.
+        -   RoundingCalculation
+        -   ThreeRoomCalculation
+        The gallons of paint per room is not properly calculated due to rounding.
 
-    The gallons of paint per room is not properly calculated due to rounding.
+        To reproduce
+        -  When I submit 1 room to paint
+        -  And I set the calculation to 20L, 20W, and 6H
 
-    To reproduce
-    -  When I submit 1 room to paint
-    -  And I set the calculation to 20L, 20W, and 6H
+        Then I should have a total length to paint of 480. This would calculate to 1.2 gallons of paint which should, 
+        in turn round up to 2 gallons.
 
-    Then I should have a total length to paint of 480. This would calculate to 1.2 gallons of paint which should, in turn round up to 2 gallons.
-
-    Currently, it rounds down to 1 gallon.`
+        Currently, it rounds down to 1 gallon.
 
   10.	Receive repair, rerun test.
 
@@ -114,21 +110,19 @@ The second running of the test now isolates a rounding error.
   
   Looking at the 3rd build report, both the One Room Calculation and the new 350 special test round to the wrong number of gallons
   12.	Report 3rd bug.
-  -  `JIRA PC-0003 Paint gallons for each room does not round correctly
-  When I run the following test cases.
-  RoundingCalculation
-  OneRoomCalculation
+  
+    JIRA PC-0003 Paint gallons for each room does not round correctly  
+        When I run the following test cases.
+        -   RoundingCalculation
+        -   OneRoomCalculation
+        The gallons of paint per room is not properly calculated.
 
-  The gallons of paint per room is not properly calculated.
-
-  To reproduce
-  -  When I submit 1 room to paint
-  -  And I set the calculation to 15L, 15W, and 6H
-
-  Then I should have a total length to paint of 360. This would calculate to .8 gallons of paint which should, in turn round up to 1 gallon.
-
-  Currently, it rounds to 2 gallons.`
-
+        To reproduce
+        -  When I submit 1 room to paint
+        -  And I set the calculation to 15L, 15W, and 6H
+        Then I should have a total length to paint of 360. This would calculate to .8 gallons of paint which should, 
+        in turn, round up to 1 gallon.
+        Currently, it rounds to 2 gallons.`
   13.	 Receive repair, rerun test.
   14.	 All tests now pass; this build can be sent to UAT.
 
