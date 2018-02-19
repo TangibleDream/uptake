@@ -65,6 +65,7 @@ On the initial run, I see flawless field validation, but a failed test made for 
   5.	Flushing out additional bugs
  
  By observing the failed test under debug, I see that the total area to paint is being miscalculated. 
+ 
   6.	Report 1st bug.
     
     JIRA PC-0001 Total Area to paint is miscalculated.
